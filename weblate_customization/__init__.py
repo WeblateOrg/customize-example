@@ -1,0 +1,1 @@
+"""Weblate customization example."""

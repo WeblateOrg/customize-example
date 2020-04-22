@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 #
 # Copyright © 2012 - 2019 Michal Čihař <michal@cihar.com>
 #
@@ -17,19 +16,18 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
-"""
-Example pre commit script
-"""
+"""Example pre commit script."""
 
 from __future__ import unicode_literals
 
 from django.utils.translation import ugettext_lazy as _
-
 from weblate.addons.events import EVENT_PRE_COMMIT
 from weblate.addons.scripts import BaseScriptAddon
 
 
 class ExamplePreAddon(BaseScriptAddon):
+    """Pre commit script example addon."""
+
     # Event used to trigger the script
     events = (EVENT_PRE_COMMIT,)
     # Name of the addon, has to be unique

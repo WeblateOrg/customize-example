@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 #
 # Copyright © 2012 - 2019 Michal Čihař <michal@cihar.com>
 #
@@ -19,11 +18,12 @@
 #
 """Simple quality check example."""
 
-from weblate.checks.base import TargetCheck
 from django.utils.translation import ugettext_lazy as _
+from weblate.checks.base import TargetCheck
 
 
 class FooCheck(TargetCheck):
+    """Check whether "foo" string is not present in the target."""
 
     # Used as identifier for check, should be unique
     # Has to be shorter than 50 chars
@@ -35,6 +35,6 @@ class FooCheck(TargetCheck):
     # Description for failing check
     description = _("Your translation is foo")
 
-    # Real check code
     def check_single(self, source, target, unit):
+        """Real check code."""
         return "foo" in target
