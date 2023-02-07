@@ -9,9 +9,16 @@ repos:
   - id: check-yaml
   - id: requirements-txt-fixer
   - id: check-merge-conflict
+  - id: check-json
   - id: debug-statements
   - id: mixed-line-ending
     args: [--fix=lf]
+  - id: pretty-format-json
+    args: [--no-sort-keys, --autofix, --no-ensure-ascii]
+- repo: https://github.com/adrienverge/yamllint
+  rev: v1.29.0
+  hooks:
+  - id: yamllint
 - repo: https://github.com/pycqa/isort
   rev: 5.12.0
   hooks:
@@ -20,7 +27,7 @@ repos:
   rev: v3.3.1
   hooks:
   - id: pyupgrade
-    args: [--py36-plus]
+    args: [--py37-plus]
 - repo: https://github.com/psf/black
   rev: 23.1.0
   hooks:
@@ -49,10 +56,6 @@ repos:
   rev: 1.13.0
   hooks:
   - id: blacken-docs
-- repo: https://github.com/adrienverge/yamllint
-  rev: v1.29.0
-  hooks:
-  - id: yamllint
 - repo: meta
   hooks:
   - id: check-hooks-apply
@@ -67,6 +70,8 @@ repos:
   hooks:
   - id: mdformat
     additional_dependencies:
-    - mdformat-gfm
-    - mdformat-black
-    - mdformat-shfmt
+    - mdformat-gfm==0.3.5
+    - mdformat-black==0.1.1
+    - mdformat-shfmt==0.1.0
+ci:
+  autoupdate_schedule: quarterly
