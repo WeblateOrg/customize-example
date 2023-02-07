@@ -1,9 +1,9 @@
 #!/usr/bin/env python
-#
+
 # Copyright © Michal Čihař <michal@weblate.org>
 #
-# This file is part of Weblate <https://weblate.org/>
-#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 """Setup script for customization demo."""
 
 from setuptools import setup
@@ -13,7 +13,7 @@ setup(
     version="0.1",
     packages=["weblate_customization"],
     include_package_data=True,
-    license="MIT",
+    license="GPL-3.0-or-later",
     description="Weblate customization example",
     long_description="Weblate customization example",
     keywords="i18n l10n gettext git mercurial translate",
