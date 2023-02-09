@@ -74,7 +74,7 @@ repos:
     - mdformat-black==0.1.1
     - mdformat-shfmt==0.1.0
 - repo: https://github.com/fsfe/reuse-tool
-  rev: v1.1.1
+  rev: v1.1.2
   hooks:
   - id: reuse
 
