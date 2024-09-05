@@ -27,3 +27,5 @@ your code.
 Any other information that is important to this PR such as screenshots of how
 the component looks before and after the change.
 -->
+
+@coderabbitai summary
