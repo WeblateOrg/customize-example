@@ -51,7 +51,7 @@ repos:
     - mdformat-shfmt==0.2.0
     - mdformat_tables==1.0.0
 - repo: https://github.com/fsfe/reuse-tool
-  rev: v4.0.3
+  rev: v5.0.2
   hooks:
   - id: reuse
 
