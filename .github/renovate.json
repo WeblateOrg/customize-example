@@ -20,7 +20,9 @@
     ]
   },
   "pep723": {
-    "fileMatch": "scripts/.*"
+    "fileMatch": [
+      "scripts/.*"
+    ]
   },
   "packageRules": [
     {
