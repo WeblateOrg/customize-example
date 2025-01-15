@@ -19,6 +19,9 @@
       "^requirements-.*\\.txt$"
     ]
   },
+  "pep723": {
+    "fileMatch": "scripts/.*"
+  },
   "packageRules": [
     {
       "matchDatasources": [
