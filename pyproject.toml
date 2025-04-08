@@ -42,5 +42,8 @@ select = [
 ]
 target-version = "py39"
 
+[tool.ruff.format]
+docstring-code-format = true
+
 [tool.ruff.mccabe]
 max-complexity = 16
