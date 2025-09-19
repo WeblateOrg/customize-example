@@ -20,10 +20,7 @@ jobs:
         python-version: '3.13'
     - uses: astral-sh/setup-uv@bd01e18f51369d5a26f1651c3cb451d3417e3bba # v6.3.1
       with:
-        enable-cache: true
-        cache-dependency-glob: ''
-    - name: Install dependencies
-      run: uv pip install --system -e .[dev]
+        enable-cache: false
     - name: build sdist
       run: uv build
     - name: twine
