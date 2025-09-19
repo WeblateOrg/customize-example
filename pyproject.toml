@@ -33,11 +33,10 @@ keywords = [
   "mercurial",
   "translate"
 ]
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
 name = "weblate_customization"
 version = "0.1"
-
-[project.license]
-text = "GPL-3.0-or-later"
 
 [project.readme]
 content-type = "text/x-rst"
@@ -45,6 +44,15 @@ file = "README.rst"
 
 [project.urls]
 Homepage = "https://weblate.org/"
+
+[tool.check-manifest]
+ignore = [
+  "*.yaml",
+  "*.yml",
+  ".editorconfig",
+  "LICENSES/*",
+  ".reuse/*"
+]
 
 [tool.isort]
 profile = "black"
@@ -95,3 +103,8 @@ docstring-code-format = true
 
 [tool.ruff.mccabe]
 max-complexity = 16
+
+[tool.uv.build-backend]
+source-include = [
+  "SECURITY.md"
+]
