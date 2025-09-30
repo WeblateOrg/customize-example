@@ -15,7 +15,7 @@ pre-commit = [
 
 [project]
 authors = [
-  {name = "Michal Čihař", email = "michal@cihar.com"}
+  {name = "Michal Čihař", email = "michal@weblate.org"}
 ]
 classifiers = [
   "Environment :: Web Environment",
