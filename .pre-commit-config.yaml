@@ -44,7 +44,6 @@ repos:
   - id: mdformat
     additional_dependencies:
     - mdformat-gfm==1.0.0
-    - mdformat-shfmt==0.2.0
 - repo: https://github.com/fsfe/reuse-tool
   rev: v6.1.2
   hooks:
