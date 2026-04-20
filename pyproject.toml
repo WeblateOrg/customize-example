@@ -116,11 +116,6 @@ docstring-code-format = true
 [tool.ruff.mccabe]
 max-complexity = 16
 
-[tool.uv.build-backend]
-source-include = [
-  "SECURITY.md"
-]
-
 [tool.rumdl]
 disable = [
   # We do not enforce heading
@@ -133,4 +128,9 @@ disable = [
 "README.md" = [
   # Allow HTML
   "MD033"
+]
+
+[tool.uv.build-backend]
+source-include = [
+  "SECURITY.md"
 ]
