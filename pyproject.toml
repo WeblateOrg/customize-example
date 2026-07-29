@@ -62,7 +62,9 @@ ignore = [
   "*.yml",
   ".editorconfig",
   "LICENSES/*",
-  ".reuse/*"
+  ".reuse/*",
+  # uv_build 0.12 preserves the original while normalizing TOML for older tools.
+  "pyproject.toml.orig"
 ]
 
 [tool.isort]
