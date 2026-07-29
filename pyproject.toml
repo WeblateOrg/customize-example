@@ -22,7 +22,6 @@ classifiers = [
   "Framework :: Django",
   "Intended Audience :: Developers",
   "Intended Audience :: System Administrators",
-  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
   "Operating System :: OS Independent",
   "Development Status :: 5 - Production/Stable",
   "Programming Language :: Python",
@@ -70,6 +69,12 @@ ignore = [
 profile = "black"
 
 [tool.ruff]
+target-version = "py311"
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint]
 ignore = [
   "D203",  # CONFIG: incompatible with D211
   "D212"  # CONFIG: incompatible with D213
@@ -108,12 +113,8 @@ select = [
   "SLF",
   "N"
 ]
-target-version = "py39"
 
-[tool.ruff.format]
-docstring-code-format = true
-
-[tool.ruff.mccabe]
+[tool.ruff.lint.mccabe]
 max-complexity = 16
 
 [tool.rumdl]
