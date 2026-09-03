@@ -78,8 +78,8 @@ docstring-code-format = true
 
 [tool.ruff.lint]
 ignore = [
-  "D203",  # CONFIG: incompatible with D211
-  "D212"  # CONFIG: incompatible with D213
+  "D203", # CONFIG: incompatible with D211
+  "D212" # CONFIG: incompatible with D213
 ]
 select = [
   "E",
