@@ -4,10 +4,10 @@ requires = ["uv_build>=0.8.18,<0.13.0"]
 
 [dependency-groups]
 dev = [
-  {include-group = "lint"}
+  { include-group = "lint" }
 ]
 lint = [
-  {include-group = "pre-commit"}
+  { include-group = "pre-commit" }
 ]
 pre-commit = [
   "prek==0.5.3"
@@ -15,7 +15,7 @@ pre-commit = [
 
 [project]
 authors = [
-  {name = "Michal Čihař", email = "michal@weblate.org"}
+  { name = "Michal Čihař", email = "michal@weblate.org" }
 ]
 classifiers = [
   "Environment :: Web Environment",
