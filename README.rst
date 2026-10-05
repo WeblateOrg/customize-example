@@ -1,7 +1,7 @@
 Weblate customization example
 =============================
 
-Example how to customize Weblate look see `Weblate documentation`_ for more
+Example of how to customize Weblate's appearance. See `Weblate documentation`_ for more
 information.
 
 .. image:: https://s.weblate.org/cdn/Logo-Darktext-borders.png
