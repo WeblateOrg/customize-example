@@ -11,6 +11,6 @@ Files: src/weblate_customization/static/*
 Copyright: Michal Čihař <michal@weblate.org>
 License: GPL-3.0-or-later
 
-Files: .gitignore .pre-commit-config.yaml MANIFEST.in requirements*.txt setup.cfg pyproject.toml
+Files: .gitignore .pre-commit-config.yaml MANIFEST.in requirements*.txt setup.cfg pyproject.toml uv.lock
 Copyright: Michal Čihař <michal@weblate.org>
 License: GPL-3.0-or-later
